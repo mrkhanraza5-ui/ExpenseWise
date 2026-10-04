@@ -1,6 +1,6 @@
 # ExpenseWise
 
-A complete college-level full-stack expense tracker for managing income, expenses, categories, monthly budgets, reports, and profile details.
+A complete full-stack expense tracker for managing income, expenses, categories, monthly budgets, reports, and profile details.
 
 ## Features
 - Email/password and Google authentication
@@ -41,11 +41,8 @@ Cloud connection values are managed automatically and private secrets are never 
 ## API and data model
 The app uses the backend's generated REST API for `profiles`, `categories`, `transactions`, and `budgets`. Each table supports the required protected CRUD operations. Authentication issues and validates access tokens, while database policies enforce ownership.
 
-## Viva summary
-ExpenseWise is a full-stack application where React renders the interface and manages form state. Authentication identifies the current user. Each database row stores that user's ID, and security policies reject access to another user's rows. Transactions are stored once and reused to calculate dashboard totals and chart data. Validation runs in both forms and the database.
-
 ## Deployment
-Use **Publish** in Lovable. The same managed backend serves preview and production, so no separate database server or secret file is required. For GitHub, keep generated migration files committed and never commit private environment values.
+The same managed backend serves preview and production, so no separate database server or secret file is required. For GitHub, keep generated migration files committed and never commit private environment values.
 
 ## Screenshots
 Add dashboard, transactions, budgets, and reports screenshots here before submission.
