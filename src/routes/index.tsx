@@ -1,0 +1,2 @@
+import { createFileRoute, redirect } from "@tanstack/react-router";
+export const Route=createFileRoute("/")({beforeLoad:()=>{throw redirect({to:"/auth"})},head:()=>({meta:[{title:"ExpenseWise — Personal Expense Tracker"},{name:"description",content:"Track income, expenses, budgets and reports in one secure place."},{property:"og:title",content:"ExpenseWise"},{property:"og:description",content:"Track your money. Understand your spending. Take control."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=>null});
